@@ -1,0 +1,127 @@
+body{
+
+}
+.header-search {
+
+}
+.header-search a{
+    right: 0;
+    text-decoration: none;
+    color: #fff;
+    float: right;
+    margin-right: 30px;
+    font-size: 1.3rem;
+}
+
+/* silder-introduction */
+.slider-intro_comment{
+    position: absolute;
+    bottom: 0;
+    padding: 50px;
+    font-size: 0.6rem;
+}
+#slider-intro {
+    position: absolute;
+    top: 500px;
+    width: 100%;
+    margin: 40px 190px;
+    display: flex;
+}
+#slider-intro .slider-intro_items{
+
+}
+#slider-intro .slider-intro_item{
+    font-size: 0.9rem;
+}
+.slider-intro_item .intro_item-bike_name{
+    padding-top: 20px;
+    letter-spacing: 3px;
+
+}
+.slider-intro_btn{
+    margin-top: 44px ;
+    margin-left: 40px;
+}
+.slider-intro_btn a{
+    margin-left: 180px;
+}
+.slider-intro_btn a:hover{
+    background-image: var(--background-img-box-hover);
+}
+
+
+/* content bike */
+#content-bike{
+    color: #111;
+    padding: 100px;
+}
+.content-bike_title{
+}
+.content-bike_name{
+    font-size: 4rem;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+.content-bike_desc{
+    font-size: 1.6rem;
+    margin-bottom: 40px;
+    letter-spacing: 4px;
+}
+.content-bike_content{
+    
+
+}
+.content-bike_content-text{
+    font-size: 0.7rem;
+    line-height: 24px;
+    letter-spacing: 2px;
+}
+.content-bike_content-text p{
+    width: 95%;
+}
+.content-bike_content-img{
+    text-align: center;
+}
+.content-bike_content-img img{
+    width: 95%;
+    height: 100%;
+    /* margin-right: 30px; */
+}
+.content-bike_img img{
+    padding-top: 80px;
+}
+
+
+/* session-posts */
+
+.session-posts{
+    color: #111;
+    
+}
+.session-post{
+    margin-bottom: 80px;
+}
+.session-post_item{
+    letter-spacing: 2px;
+}
+.session-post_img{
+    text-align: center;
+    height: 400px;
+    background-size: auto;
+    overflow: hidden;
+}
+.session-post_item .text-header{
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+    font-weight: 600;
+}
+.session-post_item .text-desc{
+    font-size: 0.7rem;
+    line-height: 24px;
+
+}
+.session-post_img img{
+    width: 90%;
+    background-size: cover;
+    transform: translateY(-30%);
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIKES</title>
+    <link rel="stylesheet" href="./assists/css/bikes.css">
+    <link rel="stylesheet" href="../common_assists/grid/grid.css">
+    <link rel="stylesheet" href="../common_assists/css/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../common_assists/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div title="Về đầu trang" id="top-up">
+        <i class="fas fa-arrow-circle-up"></i>
+    </div>
+    <script>
+        var myBtn = document.getElementById("top-up")
+        //Khi người dùng cuộn chuột thì gọi hàm scrollFunction
+        window.onscroll = function() {scrollFunction()};
+        // khai báo hàm scrollFunction
+        function scrollFunction() {
+            // Kiểm tra vị trí hiện tại của con trỏ so với nội dung trang
+            if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+                //nếu lớn hơn 400px thì hiện button
+                myBtn.style.display = "block";
+            } else {
+                //nếu nhỏ hơn 400px thì ẩn button
+                myBtn.style.display = "none";
+            }
+        }
+        //gán sự kiện click cho button
+        myBtn.addEventListener("click", function(){
+            //Nếu button được click thì nhảy về đầu trang
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        });
+    </script>
+    <div id="ld_page">
+        <!-- HEADER -->
+        <div id="header">
+            <div class="header-logo l-2">
+                <a href="../Home/index.html">
+                    <img src="../common_pics/NO_BACKGROUND_2.png" style="height:var(--high-header)" alt="">
+                </a>
+            </div>
+            <div class="header-items col l-8">
+                <ul class="row">
+                    <li class="header-item col l-3"><a href="../Home/index.html">HOME</a></li>
+                    <li class="header-item col l-3"><a href="">MOTOR</a></li>
+                    <li class="header-item col l-3"><a href="">ACCESSORY</a></li>
+                    <li class="header-item col l-3"><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="header-search col l-2">
+                <a href="" class="ti-menu"></a>
+            </div>
+        </div>
+        <div id="slider">
+            <script src="./assists/js/slider.js"></script>
+            <ul id="slideWrap">
+                <li><img src="..//common_pics/BMW/bmws100rr.jpg" alt=""></li>
+            </ul>
+            <div class="slider-intro_comment l-6">Coming in 2023. European model shown. Images may include optional equipment and accessories at extra cost.</div>
+            <div id="slider-intro">
+                <div class="slider-intro_item l-6">
+                    <span class="intro_item-category">BMW Motorrad</span>
+                    <h1 class="intro_item-bike_name">BMW S1000RR</h1>
+                </div>
+                <div class="slider-intro_btn l-6">
+                    <a href="" class="myBtn">
+                        contact dealer
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- CONTENT -->
+        <div id="content-bike">
+            <div class="content-bike_title container ">
+                <div class="content-bike_name">
+                    THE BMW S 1000 RR
+                </div>
+                <h3 class="content-bike_desc">SUPERBIKE OF SUPERLATIVES</h3>
+            </div>
+            <div class="content-bike_content row">
+                <div class="content-bike_content-text l-6">
+                    <p>The RR is now even more focused and more precisely geared towards pure performance. For those who increasingly demand more. More from themselves. More each lap. And more from their RR. Simply put: <strong>#NeverStopChallenging</strong>. Leading the way is a matter of millimeters, especially in the circles the RR has always been a part of. That’s why we have streamlined and evolved the RR where it matters most: from the new steering angle sensor with Brake Slide Assist and Slide Control as well as the integration of M components and improvements to the electronics and crucial processes for modifying the bike for the race track. And all this with a clear goal in mind – claiming the pole position over and over again.</p>
+                </div>
+                <div class="content-bike_content-img l-6">
+                    <img class="" src="../common_pics/BMW/BMW-S1000RR-5.jpg" alt="">
+                </div>
+            </div>
+            <div class="content-bike_img row">
+                <img class="l-12" src="../common_pics/BMW/bia_bmw-rr.jpg" alt="">
+            </div>
+        </div>
+        <div id="session">
+            <div class="content-session container">
+                <header>
+                    <h1>motorbike information</h1>
+                    <img src="../common_pics/logo_brand/logo-xe-may-inkythuatso-4.png" alt="">
+                </header>
+                <p>Master the speed - Master yourself</p>
+            </div>
+            <div class="session-posts row">
+                <div class="session-post row" style="width: 900px !important;">
+                    <div class="session-post_item col-width l-12">
+                        <div class="text-header" style="text-align: center;">
+                            Passion is where the heart beats – and boy, does it beat!
+                        </div>
+                        <div class="text-desc">
+                            Unleashed passion: we have once again transferred all the experience from the race track to the high-performance BMW ShiftCam four-cylinder engine in the RR: 205 hp. The airbox from the M RR provides particularly good air supply and improved load changes. The cylinder heads with new channel geometry and reinforced bearing brackets also stem from the M RR. We have also optimized the standard Shift Assistant Pro. It now also permits gearshifts with overrun upshifts and overrun downshifts and provides improved load change damping – for gearshifting precision. And even the rear sprocket has more teeth now: just like in the M RR, it now has 46 teeth instead of 45 – for power down the straight.
+                        </div>
+                    </div>
+
+                </div>
+                <div class="session-post row">
+                    <div class="session-post_item col-width l-6">
+                        <div class="text-header">
+                            Framework conditions – quite literally
+                        </div>
+                        <div class="text-desc">
+                            It’s about millimeters to gain feedback and riding precision: The M chassis kit with raised rear end and adjustable swing arm pivot is standard. Frame recesses provide greater lateral flexibility. We have lowered the steering head angle by 0.5° to 66.4° and reduced the offset of the fork bridges by 3 mm to 25.5 mm for front wheel accuracy. And removing the rear wheel has been simplified by using captive axle bushes and optimizing the brake system. We have also added Race Pro 1 to 3 to the damping of the DDC in Road, Dynamic, Race mode in a performance-oriented manner. This makes it possible to ride along country roads with on-road damping characteristics, also in Race Pro 1-3.
+                        </div>
+                    </div>
+                    <div class="session-post_img col-width l-6 ">
+                        <img class="" style="float: right;" src="../common_pics/BMW/BMW_s1000rr_6.jpg" alt="">
+                    </div>
+                </div>
+                <div class="session-post row">
+                    <div class="session-post_img col-width l-6 ">
+                        <img class="" style="float: left;" src="../common_pics/BMW/BMW_s1000rr_7.jpg" alt="">
+                    </div>
+                    <div class="session-post_item col-width l-6">
+                        <div class="text-header">
+                            Redefined cornering
+                        </div>
+                        <div class="text-desc">
+                            The 6-stage DTC traction control with the new steering angle sensor enables two new functions: Brake Slide Assist for deceleration and Slide/Slip Control for acceleration. The new steering angle sensor measures your drift angle and, in conjunction with the DTC, helps provide optimum slip. DTC settings 2 and 3 have been optimized for the race track and slicks. Brake Slide Assist helps you master power slides like these in no time at all: for more dynamic performance around every turn. Thanks to the clearer illustration, you can now read the corresponding settings off the TFT display even more quickly. Always ride within your limits and within the law.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project-info">
+            <div class="info-items container">
+                <ul class="row">
+                    <li class="info-item l-3"> 
+                        <i class="fa fa-user-plus"></i> 
+                        <h1 class="info-item_param">2453</h1>
+                        <p class="info-item-title">Loyal customer</p>
+                    </li>
+                    <li class="info-item l-3"> 
+                        <i class="fa fa-credit-card"></i> 
+                        <h1 class="info-item_param">81</h1>
+                        <p class="info-item-title">Projects</p>
+                    </li>
+                    <li class="info-item l-3"> 
+                        <i class="fa fa-box-open"></i>
+                        <h1 class="info-item_param">1758</h1>
+                        <p class="info-item-title">Completed Projects</p>
+                    </li>
+                    <li class="info-item l-3"> 
+                        <i class="fa fa-project-diagram"></i>
+                        <h1 class="info-item_param">685</h1>
+                        <p class="info-item-title">Partner</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- FOOTER -->
+        <div id="footer">
+            <div class="footer-box">
+                <div class="footer-logo">
+                    <img src="../common_pics/NO_BACKGROUND_2.png" alt="">
+                </div>
+                <ul class="footer-policy">
+                    <li class="footer-policy_item l-4">
+                        <a href="">terms of user</a>
+                    </li>
+                    <li class="footer-policy_item l-4">
+                        <a href="">privacy information</a>
+                    </li>
+                    <li class="footer-policy_item l-4">
+                        <a href="">cookies information</a>
+                    </li>
+                </ul>
+                <div class="footer-license">
+                    <p>Copyright © 2023 LDP Motor Holding S.p.A. – A Sole Shareholder Company - A Company subject to the Management and Coordination activities of AUDI AG. All rights reserved. VAT 05113870967</p>
+                </div>
+                <div class="footer-link">
+                    <div class="footer-link_brand l-4">
+                        <img  src="./assists/pics/logo_brand/ducati-3-logo-black-and-white.png" alt="">
+                        <img  src="./assists/pics/logo_brand/Kawasaki-logo.svg.png" alt="">
+                        <img  src="./assists/pics/logo_brand/yamaha-parkway-music-png-logo-17.png" alt="">
+                    </div>
+                    <div class="social-medias l-4">
+                        <a href="">
+                            <i class="ti-facebook"></i>
+                        </a>
+                        <a href="">
+                            <i class="ti-instagram"></i>
+                        </a>
+                        <a href="">
+                            <i class="ti-youtube"></i>
+                        </a>
+                        <a href="">
+                            <i class="ti-twitter"></i>
+                        </a>
+                    </div>
+                    <a href="" class="footer-link_country l-4">
+                        <div class="country-box">
+                            <i class="ti-world"></i>
+                                international website
+                            <i class="ti-angle-up"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div> 
+    </div> 
+</body>
+</html>
