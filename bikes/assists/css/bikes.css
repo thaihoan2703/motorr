@@ -96,6 +96,7 @@ body{
 
 .session-posts{
     color: #111;
+    margin-top: 40px;
     
 }
 .session-post{
@@ -124,4 +125,55 @@ body{
     width: 90%;
     background-size: cover;
     transform: translateY(-30%);
+}
+
+/* configurator_stageWrapper */
+.configurator_stageWrapper{
+    color: #111;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.configurator_stage{
+    width: 100%;
+}
+.configurator_stage img{
+    width: 100%;
+    background-image: #ddd;
+}
+.configurator_desc{
+    margin-top: 30px;
+    padding: 20px;
+}
+.configurator_desc-title{
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding-bottom: 14px;
+    letter-spacing: 2px;
+}
+.configurator_desc-text{
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+}
+.configurator_optionNav{
+}
+.optionNav_options{
+    list-style: none;
+    margin-top: 30px;
+}
+.optionNav_option{
+    padding: 30px 20px 20px 20px;
+    background-color: #eee;
+}
+.optionNav_option-title{
+    padding-bottom: 14px;
+    font-size: 0.7rem;
+}
+.optionNav_option-text{
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    padding-bottom: 30px;
+}
+.optionNav_option-btn{
+    text-decoration: none;
 }
