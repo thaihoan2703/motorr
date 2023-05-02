@@ -1,380 +1,499 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LDP_Motor</title>
-    <link rel="stylesheet" href="./home_page/assists/css/style.css">
-    <link rel="stylesheet" href="./common_assists/grid/grid.css">
-    <link rel="stylesheet" href="./common_assists/css/base.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="./common_assists/themify-icons/themify-icons.css">
-</head>
-<body>
-    <div class="background_img" style="background-image: url(./common_pics/aprilia_rsv4.jpg)"></div>
+    <link rel="stylesheet" href="./home_page/assists/css/style.css" />
+    <link rel="stylesheet" href="./common_assists/grid/grid.css" />
+    <link rel="stylesheet" href="./common_assists/css/base.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./common_assists/themify-icons/themify-icons.css"
+    />
+  </head>
+  <body>
+    <div
+      class="background_img"
+      style="background-image: url(./common_pics/aprilia_rsv4.jpg);"
+    ></div>
     <div title="Về đầu trang" id="top-up">
-        <i class="fas fa-arrow-circle-up"></i>
+      <i class="fas fa-arrow-circle-up"></i>
     </div>
     <script>
-        var myBtn = document.getElementById("top-up")
-        //Khi người dùng cuộn chuột thì gọi hàm scrollFunction
-        window.onscroll = function() {scrollFunction()};
-        // khai báo hàm scrollFunction
-        function scrollFunction() {
-            // Kiểm tra vị trí hiện tại của con trỏ so với nội dung trang
-            if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-                //nếu lớn hơn 400px thì hiện button
-                myBtn.style.display = "block";
-            } else {
-                //nếu nhỏ hơn 400px thì ẩn button
-                myBtn.style.display = "none";
-            }
+      var myBtn = document.getElementById('top-up')
+      //Khi người dùng cuộn chuột thì gọi hàm scrollFunction
+      window.onscroll = function () {
+        scrollFunction()
+      }
+      // khai báo hàm scrollFunction
+      function scrollFunction() {
+        // Kiểm tra vị trí hiện tại của con trỏ so với nội dung trang
+        if (
+          document.body.scrollTop > 400 ||
+          document.documentElement.scrollTop > 400
+        ) {
+          //nếu lớn hơn 400px thì hiện button
+          myBtn.style.display = 'block'
+        } else {
+          //nếu nhỏ hơn 400px thì ẩn button
+          myBtn.style.display = 'none'
         }
-        //gán sự kiện click cho button
-        myBtn.addEventListener("click", function(){
-            //Nếu button được click thì nhảy về đầu trang
-            window.scrollTo({top: 0, behavior: 'smooth'});
-        });
+      }
+      //gán sự kiện click cho button
+      myBtn.addEventListener('click', function () {
+        //Nếu button được click thì nhảy về đầu trang
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+      })
     </script>
     <div id="ld_page">
-        <!-- HEADER -->
-        <div id="header">
-            <div class="header-logo l-2">
-                <a href="">
-                    <img src="./common_pics/NO_BACKGROUND_2.png" style="height:var(--high-header)" alt="">
-                </a>
-            </div>
-            <div class="header-items col l-8">
-                <ul class="row">
-                    <li class="header-item col l-3"><a href="./bikes.html">HOME</a></li>
-                    <li class="header-item col l-3"><a href="./bikes.html" target="_blank" >MOTOR</a></li>
-                    <li class="header-item col l-3"><a href="">ACCESSORY</a></li>
-                    <li class="header-item col l-3"><a href="">CONTACT</a></li>
-                </ul>
-            </div>
-            <div class="header-search col l-2">
-                <div class="search-box">
-                    <form name="search" >
-                        <input type="text" class="input" name="txt" placeholder="Search" onmouseout="this.value = ''; this.blur();">
-                    </form>
-                    <i class="fas fa-search"></i>
-                </div>
-            </div>
+      <!-- HEADER -->
+      <div id="header">
+        <div class="header-logo l-2">
+          <a href="">
+            <img
+              src="./common_pics/NO_BACKGROUND_2.png"
+              style="height: var(--high-header);"
+              alt=""
+            />
+          </a>
         </div>
-        <!-- SLIDER -->
-        <div id="slider">
-            <script src="./common_assists/js/slider.js"></script>
-            <ul id="slideWrap">
-                <li><img src="./common_pics/BMW/bmws100rr.jpg" alt=""></li>
-                <li><img src="./common_pics/Ducati_Superleggera_V4.jpg" alt=""></li>
-                <li><img src="./common_pics/Yamaha_MT10.jpg" alt=""></li>
-                <li><img src="./common_pics/yamaha_r1.jpg" alt=""></li>
-
-            </ul>
-            <a id="prev" href="#">&#8810;</a>
-            <a id="next" href="#">&#8811;</a>
-            <div class="slider-content container ">
+        <div class="header-items col l-8">
+          <ul class="row">
+            <li class="header-item col l-3"><a href="./bikes.html">HOME</a></li>
+            <li class="header-item col l-3">
+              <a href="./bikes.html" target="_blank">MOTOR</a>
+            </li>
+            <li class="header-item col l-3"><a href="">ACCESSORY</a></li>
+            <li class="header-item col l-3"><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="header-search col l-2">
+          <div class="search-box">
+            <form name="search">
+              <input
+                type="text"
+                class="input"
+                name="txt"
+                placeholder="Search"
+                onmouseout="this.value = ''; this.blur();"
+              />
+            </form>
+            <i class="fas fa-search"></i>
+          </div>
+        </div>
+      </div>
+      <!-- SLIDER -->
+      <div id="slider">
+        <script src="./common_assists/js/slider.js"></script>
+        <ul id="slideWrap">
+          <li><img src="./common_pics/BMW/bmws100rr.jpg" alt="" /></li>
+          <li><img src="./common_pics/Ducati_Superleggera_V4.jpg" alt="" /></li>
+          <li><img src="./common_pics/Yamaha_MT10.jpg" alt="" /></li>
+          <li><img src="./common_pics/yamaha_r1.jpg" alt="" /></li>
+        </ul>
+        <a id="prev" href="#">&#8810;</a>
+        <a id="next" href="#">&#8811;</a>
+        <div class="slider-content container">
+          <div class="row">
+            <div class="col l-4"></div>
+            <div class="slider-content_box col l-8">
+              <div class="slider-content_header col l-12">
+                Buy the product now at the price
+                <br />
+                Hot deals from today!
+              </div>
+              <div class="slider-content_text col l-8">
+                <i class="fa fa-check-circle" style="font-size: 0.8rem;"></i>
+                Meet our newest product which will be way better, slimmer and
+                sharper than previous versions. Order today!
+              </div>
+              <div class="slider-content_input col l-12">
                 <div class="row">
-                    <div class="col l-4"></div>
-                    <div class="slider-content_box col l-8">
-                        <div class="slider-content_header col l-12">
-                            Buy the product now at the price
-                            <br>Hot deals from today!
-                        </div>
-                        <div class="slider-content_text col l-8">
-                            <i class="fa fa-check-circle" style="font-size: 0.8rem;"></i>
-                            Meet our newest product which will be way better, slimmer and sharper than previous versions. Order today!
-                        </div>
-                        <div class="slider-content_input col l-12">
-                            <div class="row">
-                                <input type="text" placeholder="Enter your Email" class="enter-email col l-8">
-                                <div class="sign-up col l-3">
-                                    SUBSCRIBE NOW !
-                                </div>
-                            </div>
-                        </div>
-                        <span class="comment col l-12">* Offer for the first 100 people to register the fastest!!</span>
-                    </div>
+                  <input
+                    type="text"
+                    placeholder="Enter your Email"
+                    class="enter-email col l-8"
+                  />
+                  <div class="sign-up col l-3">
+                    SUBSCRIBE NOW !
+                  </div>
                 </div>
+              </div>
+              <span class="comment col l-12">
+                * Offer for the first 100 people to register the fastest!!
+              </span>
             </div>
+          </div>
         </div>
-        <!-- CONTENT -->
-        <div id="content">
-            <div class="content-news container">
-                <label class="content-new">
-                    <div class="content-new_item col l-6">
-                        <div class="content-new_header">
-                            Ưu đãi dịch vụ lên đến 25%
-                        </div>
-                        <div class="content-new_text">
-                            Ưu đãi gói dịch vụ lên đến 25% cho khách hàng lần đầu ghé thăm xưởng dịch vụ hoặc đã kiểm tra số VIN xe trên hệ thống.
-                        </div>
-                        <a href="" class="content-new_link">
-                            XEM CHI TIẾT
-                        </a>     
-                    </div>
-                    <div class="content-new_item col l-6">
-                        <img src="./common_pics/fix_ducati_1.jpg" alt="">
-                    </div>              
-                </label>
-                <label class="content-new">
-                    <div class="content-new_item col l-6">
-                        <div class="content-new_header">
-                            Bảng giá Dịch vụ mới nhất
-                        </div>
-                        <div class="content-new_text">
-                            Xưởng dịch vụ chính hãng của Ducati cập nhật bảng giá mới nhất và khuyến cáo các mốc thời gian phù hợp làm bảo dưỡng Desmodromic để chiếc xe đạt được hiệu suất tối ưu.
-                        </div>
-                        <a href="" class="content-new_link">
-                            XEM CHI TIẾT
-                        </a>     
-                    </div>
-                    <div class="content-new_item col l-6">
-                        <img src="./common_pics/phu_tung_ducati.jpg" alt="">
-                    </div> 
-                </label>
+      </div>
+      <!-- CONTENT -->
+      <div id="content">
+        <div class="content-news container">
+          <label class="content-new">
+            <div class="content-new_item col l-6">
+              <div class="content-new_header">
+                Ưu đãi dịch vụ lên đến 25%
+              </div>
+              <div class="content-new_text">
+                Ưu đãi gói dịch vụ lên đến 25% cho khách hàng lần đầu ghé thăm
+                xưởng dịch vụ hoặc đã kiểm tra số VIN xe trên hệ thống.
+              </div>
+              <a href="" class="content-new_link">
+                XEM CHI TIẾT
+              </a>
             </div>
-            <div class="content-model container">
-                <header>Mẫu xe Motor 2022:</header>
-                <h5>Khám Phá Những Mẫu Xe 2022 Có Mặt Tại Việt Nam Dưới Đây</h5>
-                    <div class="content-model_items row">
-                        <a href="" class="content-model_item l-4">
-                            <img src="./common_pics/ducati_models/hypermotard_950sp.png" alt="">
-                            <h5 class="model_item-name">Hypermotard 950 SP</h5>
-                            <div class="model_item-param">
-                                <br>Công Xuất: 153 Hp
-                                <br>Mô-men Xoắn: 101.4 Nm
-                                <br>Trọng Lượng: 200 Kg
-                            </div>
-                        </a>
-                        <a href="" class="content-model_item l-4">
-                            <img src="./common_pics/ducati_models/hypermotard_950sp.png" alt="">
-                            <h5 class="model_item-name">Streetfighter V2</h5>
-                            <div class="model_item-param">
-                                <br>Công Xuất: 153 Hp
-                                <br>Mô-men Xoắn: 101.4 Nm
-                                <br>Trọng Lượng: 200 Kg
-                            </div>
-                        </a>
-                        <a href="" class="content-model_item l-4">
-                            <img src="./common_pics/ducati_models/multistrada_v4s.png"  alt="">
-                            <h5 class="model_item-name">Multistrada_V4S</h5>
-                            <div class="model_item-param">
-                                <br>Công Xuất: 153 Hp
-                                <br>Mô-men Xoắn: 101.4 Nm
-                                <br>Trọng Lượng: 200 Kg
-                            </div>
-                        </a>
-                        <a href="" class="content-model_item l-4">
-                            <img src="./common_pics/BMW/bmw_models/BMW-R-1250-GS-Adv-Rallye_FHD.jpg" alt="">
-                            <h5 class="model_item-name">BMW R1250GS</h5>
-                            <div class="model_item-param">
-                                <br>Công Xuất: 153 Hp
-                                <br>Mô-men Xoắn: 101.4 Nm
-                                <br>Trọng Lượng: 200 Kg
-                            </div>
-                        </a>
-                        <a href="" class="content-model_item l-4">
-                            <img src="./common_pics/BMW/bmw_models/BMW-S-1000-R_M.jpg" alt="">
-                            <h5 class="model_item-name">BMW S1000R</h5>
-                            <div class="model_item-param">
-                                <br>Công Xuất: 153 Hp
-                                <br>Mô-men Xoắn: 101.4 Nm
-                                <br>Trọng Lượng: 200 Kg
-                            </div>
-                        </a>
-                        <a href="" class="content-model_item l-4">
-                            <img src="./common_pics/BMW/bmw_models/BMW-S-1000-RR.jpg" alt="">
-                            <h5 class="model_item-name">BMW S1000RR</h5>
-                            <div class="model_item-param">
-                                <br>Công Xuất: 153 Hp
-                                <br>Mô-men Xoắn: 101.4 Nm
-                                <br>Trọng Lượng: 200 Kg
-                            </div>
-                        </a>
-                        <a href="" class="content-model_item l-4">
-                            <img src="./common_pics/aprilia_models/10-RSV4-Factory-scaled.jpg" alt="">
-                            <h5 class="model_item-name">Aprilia RSV4 Factory</h5>
-                            <div class="model_item-param">
-                                <br>Công Xuất: 153 Hp
-                                <br>Mô-men Xoắn: 101.4 Nm
-                                <br>Trọng Lượng: 200 Kg
-                            </div>
-                        </a>
-                        <a href="" class="content-model_item l-4">
-                            <img src="./common_pics/yamaha_models/Yamaha-YZF-R1.jpg"  alt="">
-                            <h5 class="model_item-name">Yamaha YZF R1</h5>
-                            <div class="model_item-param">
-                                <br>Công Xuất: 153 Hp
-                                <br>Mô-men Xoắn: 101.4 Nm
-                                <br>Trọng Lượng: 200 Kg
-                            </div>
-                        </a>
-                        <a href="" class="content-model_item l-4">
-                            <img src="./common_pics/suzuki_models/gsx-r_1000.jpg"  alt="">
-                            <h5 class="model_item-name">Suzuki GSX r1000</h5>
-                            <div class="model_item-param">
-                                <br>Công Xuất: 153 Hp
-                                <br>Mô-men Xoắn: 101.4 Nm
-                                <br>Trọng Lượng: 200 Kg
-                            </div>
-                        </a>
-                    </div>
+            <div class="content-new_item col l-6">
+              <img src="./common_pics/fix_ducati_1.jpg" alt="" />
             </div>
-        </div>  
-        <div id="advertisement">
-            <div class="video-adver container">
-                <video autoplay loop muted>
-                    <source src="./common_videos/Sito-Hero-10Sec.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+          </label>
+          <label class="content-new">
+            <div class="content-new_item col l-6">
+              <div class="content-new_header">
+                Bảng giá Dịch vụ mới nhất
+              </div>
+              <div class="content-new_text">
+                Xưởng dịch vụ chính hãng của Ducati cập nhật bảng giá mới nhất
+                và khuyến cáo các mốc thời gian phù hợp làm bảo dưỡng
+                Desmodromic để chiếc xe đạt được hiệu suất tối ưu.
+              </div>
+              <a href="" class="content-new_link">
+                XEM CHI TIẾT
+              </a>
             </div>
+            <div class="content-new_item col l-6">
+              <img src="./common_pics/phu_tung_ducati.jpg" alt="" />
+            </div>
+          </label>
         </div>
-        <div id="session">
-            <div class="module_headline container">
-                <header>
-                    <h1>HIGhlight events</h1>
-                    <img src="./common_pics/logo_brand/logo-xe-may-inkythuatso-4.png" alt="">
-                </header>
-                <h1>Master the speed - Master yourself</h1>
-                <div class="session-items">
-                    <a href="#" class="session-item">
-                        <div class="item_img">
-                            <img src="./common_pics/ducati_.jpg" alt="">
-                        </div>
-                        <div class="session-item_content">
-                            <div class="date">
-                                <i class="fa fa-calendar"></i>
-                                 <div class="date_day">14 Jan 2023</div>
-                            </div>
-                            <div class="line"></div>
-                            <div class="desc">Mô tả điểm nổi bật, lời giới thiệu hấp dẫn về sản phẩm/dịch vụ.</div>
-                        </div>
-                    </a>
-                    <a href="#" class="session-item">
-                        <div class="item_img">
-                            <img src="./common_pics/KTM_rc8r.jpg" alt="">
-                        </div>
-                        <div class="session-item_content">
-                            <div class="date">
-                                <i class="fa fa-calendar"></i>
-                                 <div class="date_day">5 Feb 2023</div>
-                            </div>
-                            <div class="line"></div>
-                            <div class="desc">Mô tả điểm nổi bật, lời giới thiệu hấp dẫn về sản phẩm/dịch vụ.</div>
-                        </div>
-                    </a>
-                    <a href="#" class="session-item">
-                        <div class="item_img">
-                            <img src="./common_pics/Kawasaki_ninja_H2.jpg" alt="">
-                        </div>
-                        <div class="session-item_content">
-                            <div class="date">
-                                <i class="fa fa-calendar"></i>
-                                 <div class="date_day">23 Mar 2023</div>
-                            </div>
-                            <div class="line"></div>
-                            <div class="desc">Mô tả điểm nổi bật, lời giới thiệu hấp dẫn về sản phẩm/dịch vụ.</div>
-                        </div>
-                    </a>
-                </div>
-            </div>
+        <div class="content-model container">
+          <header>Mẫu xe Motor 2022:</header>
+          <h5>Khám Phá Những Mẫu Xe 2022 Có Mặt Tại Việt Nam Dưới Đây</h5>
+          <div class="content-model_items row">
+            <a href="" class="content-model_item l-4">
+              <img
+                src="./common_pics/ducati_models/hypermotard_950sp.png"
+                alt=""
+              />
+              <h5 class="model_item-name">Hypermotard 950 SP</h5>
+              <div class="model_item-param">
+                <br />
+                Công Xuất: 153 Hp
+                <br />
+                Mô-men Xoắn: 101.4 Nm
+                <br />
+                Trọng Lượng: 200 Kg
+              </div>
+            </a>
+            <a href="" class="content-model_item l-4">
+              <img
+                src="./common_pics/ducati_models/hypermotard_950sp.png"
+                alt=""
+              />
+              <h5 class="model_item-name">Streetfighter V2</h5>
+              <div class="model_item-param">
+                <br />
+                Công Xuất: 153 Hp
+                <br />
+                Mô-men Xoắn: 101.4 Nm
+                <br />
+                Trọng Lượng: 200 Kg
+              </div>
+            </a>
+            <a href="" class="content-model_item l-4">
+              <img
+                src="./common_pics/ducati_models/multistrada_v4s.png"
+                alt=""
+              />
+              <h5 class="model_item-name">Multistrada_V4S</h5>
+              <div class="model_item-param">
+                <br />
+                Công Xuất: 153 Hp
+                <br />
+                Mô-men Xoắn: 101.4 Nm
+                <br />
+                Trọng Lượng: 200 Kg
+              </div>
+            </a>
+            <a href="" class="content-model_item l-4">
+              <img
+                src="./common_pics/BMW/bmw_models/BMW-R-1250-GS-Adv-Rallye_FHD.jpg"
+                alt=""
+              />
+              <h5 class="model_item-name">BMW R1250GS</h5>
+              <div class="model_item-param">
+                <br />
+                Công Xuất: 153 Hp
+                <br />
+                Mô-men Xoắn: 101.4 Nm
+                <br />
+                Trọng Lượng: 200 Kg
+              </div>
+            </a>
+            <a href="" class="content-model_item l-4">
+              <img
+                src="./common_pics/BMW/bmw_models/BMW-S-1000-R_M.jpg"
+                alt=""
+              />
+              <h5 class="model_item-name">BMW S1000R</h5>
+              <div class="model_item-param">
+                <br />
+                Công Xuất: 153 Hp
+                <br />
+                Mô-men Xoắn: 101.4 Nm
+                <br />
+                Trọng Lượng: 200 Kg
+              </div>
+            </a>
+            <a href="" class="content-model_item l-4">
+              <img
+                src="./common_pics/BMW/bmw_models/BMW-S-1000-RR.jpg"
+                alt=""
+              />
+              <h5 class="model_item-name">BMW S1000RR</h5>
+              <div class="model_item-param">
+                <br />
+                Công Xuất: 153 Hp
+                <br />
+                Mô-men Xoắn: 101.4 Nm
+                <br />
+                Trọng Lượng: 200 Kg
+              </div>
+            </a>
+            <a href="" class="content-model_item l-4">
+              <img
+                src="./common_pics/aprilia_models/10-RSV4-Factory-scaled.jpg"
+                alt=""
+              />
+              <h5 class="model_item-name">Aprilia RSV4 Factory</h5>
+              <div class="model_item-param">
+                <br />
+                Công Xuất: 153 Hp
+                <br />
+                Mô-men Xoắn: 101.4 Nm
+                <br />
+                Trọng Lượng: 200 Kg
+              </div>
+            </a>
+            <a href="" class="content-model_item l-4">
+              <img src="./common_pics/yamaha_models/Yamaha-YZF-R1.jpg" alt="" />
+              <h5 class="model_item-name">Yamaha YZF R1</h5>
+              <div class="model_item-param">
+                <br />
+                Công Xuất: 153 Hp
+                <br />
+                Mô-men Xoắn: 101.4 Nm
+                <br />
+                Trọng Lượng: 200 Kg
+              </div>
+            </a>
+            <a href="" class="content-model_item l-4">
+              <img src="./common_pics/suzuki_models/gsx-r_1000.jpg" alt="" />
+              <h5 class="model_item-name">Suzuki GSX r1000</h5>
+              <div class="model_item-param">
+                <br />
+                Công Xuất: 153 Hp
+                <br />
+                Mô-men Xoắn: 101.4 Nm
+                <br />
+                Trọng Lượng: 200 Kg
+              </div>
+            </a>
+          </div>
         </div>
-        <div class="project-info">
-            <div class="info-items container">
-                <ul class="row">
-                    <li class="info-item l-3"> 
-                        <i class="fa fa-user-plus"></i> 
-                        <h1 class="info-item_param">2453</h1>
-                        <p class="info-item-title">Loyal customer</p>
-                    </li>
-                    <li class="info-item l-3"> 
-                        <i class="fa fa-credit-card"></i> 
-                        <h1 class="info-item_param">81</h1>
-                        <p class="info-item-title">Projects</p>
-                    </li>
-                    <li class="info-item l-3"> 
-                        <i class="fa fa-box-open"></i>
-                        <h1 class="info-item_param">1758</h1>
-                        <p class="info-item-title">Completed Projects</p>
-                    </li>
-                    <li class="info-item l-3"> 
-                        <i class="fa fa-project-diagram"></i>
-                        <h1 class="info-item_param">685</h1>
-                        <p class="info-item-title">Partner</p>
-                    </li>
-                </ul>
-            </div>
+      </div>
+      <div id="advertisement">
+        <div class="video-adver container">
+          <video autoplay loop muted>
+            <source
+              src="./common_videos/Sito-Hero-10Sec.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
         </div>
-        <div id="notice">
-            <div class="notice-info container">
-                <img src="./common_pics/info_follow/USA_Insta_1330x600.jpg" alt="">
-                <div class="notice-info_content l-5">
-                    <div class="notice-info_content-box">
-                        <h2 class="notice-info_title">
-                            follow LDP Motor on Instagram
-                        </h2>
-                        <p class="notice-info_desc">
-                            The style and performance of our bikes, the thrills of the MotoGP and Superbike championships, the emotions of the events and all your passion. Discover the Ducati world also on Instagram.
-                        </p>
-                    </div>
-                    <a href="https://www.instagram.com/nt_hoan.03/?hl=en" target="_blank" class="notice-info_button myBtn">
-                        follow us
-                    </a>
+      </div>
+      <div id="session">
+        <div class="module_headline container">
+          <header>
+            <h1>HIGhlight events</h1>
+            <img
+              src="./common_pics/logo_brand/logo-xe-may-inkythuatso-4.png"
+              alt=""
+            />
+          </header>
+          <h1>Master the speed - Master yourself</h1>
+          <div class="session-items">
+            <a href="#" class="session-item">
+              <div class="item_img">
+                <img src="./common_pics/ducati_.jpg" alt="" />
+              </div>
+              <div class="session-item_content">
+                <div class="date">
+                  <i class="fa fa-calendar"></i>
+                  <div class="date_day">14 Jan 2023</div>
                 </div>
-            </div>
+                <div class="line"></div>
+                <div class="desc">
+                  Mô tả điểm nổi bật, lời giới thiệu hấp dẫn về sản phẩm/dịch
+                  vụ.
+                </div>
+              </div>
+            </a>
+            <a href="#" class="session-item">
+              <div class="item_img">
+                <img src="./common_pics/KTM_rc8r.jpg" alt="" />
+              </div>
+              <div class="session-item_content">
+                <div class="date">
+                  <i class="fa fa-calendar"></i>
+                  <div class="date_day">5 Feb 2023</div>
+                </div>
+                <div class="line"></div>
+                <div class="desc">
+                  Mô tả điểm nổi bật, lời giới thiệu hấp dẫn về sản phẩm/dịch
+                  vụ.
+                </div>
+              </div>
+            </a>
+            <a href="#" class="session-item">
+              <div class="item_img">
+                <img src="./common_pics/Kawasaki_ninja_H2.jpg" alt="" />
+              </div>
+              <div class="session-item_content">
+                <div class="date">
+                  <i class="fa fa-calendar"></i>
+                  <div class="date_day">23 Mar 2023</div>
+                </div>
+                <div class="line"></div>
+                <div class="desc">
+                  Mô tả điểm nổi bật, lời giới thiệu hấp dẫn về sản phẩm/dịch
+                  vụ.
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
-        <!-- FOOTER -->
-        <div id="footer">
-            <div class="footer-box">
-                <div class="footer-logo">
-                    <img src="./common_pics/NO_BACKGROUND_2.png" alt="">
-                </div>
-                <ul class="footer-policy">
-                    <li class="footer-policy_item l-4">
-                        <a href="">terms of user</a>
-                    </li>
-                    <li class="footer-policy_item l-4">
-                        <a href="">privacy information</a>
-                    </li>
-                    <li class="footer-policy_item l-4">
-                        <a href="">cookies information</a>
-                    </li>
-                </ul>
-                <div class="footer-license">
-                    <p>Copyright © 2023 LDP Motor Holding S.p.A. – A Sole Shareholder Company - A Company subject to the Management and Coordination activities of AUDI AG. All rights reserved. VAT 05113870967</p>
-                </div>
-                <div class="footer-link">
-                    <div class="footer-link_brand l-4">
-                        <img  src="./common_pics/logo_brand/ducati-3-logo-black-and-white.png" alt="">
-                        <img  src="./common_pics/logo_brand/Kawasaki-logo.svg.png" alt="">
-                        <img  src="./common_pics/logo_brand/yamaha-parkway-music-png-logo-17.png" alt="">
-                    </div>
-                    <div class="social-medias l-4">
-                        <a href="https://www.facebook.com/thaihoan.1103">
-                            <i class="ti-facebook"></i>
-                        </a>
-                        <a href="https://www.instagram.com/nt_hoan.03/">
-                            <i class="ti-instagram"></i>
-                        </a>
-                        <a href="https://www.youtube.com/">
-                            <i class="ti-youtube"></i>
-                        </a>
-                        <a href="https://twitter.com/ThaiHoan1103">
-                            <i class="ti-twitter"></i>
-                        </a>
-                    </div>
-                    <a href="" class="footer-link_country l-4">
-                        <div class="country-box">
-                            <i class="ti-world"></i>
-                                international website
-                            <i class="ti-angle-up"></i>
-                        </div>
-                    </a>
-                </div>
+      </div>
+      <div class="project-info">
+        <div class="info-items container">
+          <ul class="row">
+            <li class="info-item l-3">
+              <i class="fa fa-user-plus"></i>
+              <h1 class="info-item_param">2453</h1>
+              <p class="info-item-title">Loyal customer</p>
+            </li>
+            <li class="info-item l-3">
+              <i class="fa fa-credit-card"></i>
+              <h1 class="info-item_param">81</h1>
+              <p class="info-item-title">Projects</p>
+            </li>
+            <li class="info-item l-3">
+              <i class="fa fa-box-open"></i>
+              <h1 class="info-item_param">1758</h1>
+              <p class="info-item-title">Completed Projects</p>
+            </li>
+            <li class="info-item l-3">
+              <i class="fa fa-project-diagram"></i>
+              <h1 class="info-item_param">685</h1>
+              <p class="info-item-title">Partner</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="notice">
+        <div class="notice-info container">
+          <img src="./common_pics/info_follow/USA_Insta_1330x600.jpg" alt="" />
+          <div class="notice-info_content l-5">
+            <div class="notice-info_content-box">
+              <h2 class="notice-info_title">
+                follow LDP Motor on Instagram
+              </h2>
+              <p class="notice-info_desc">
+                The style and performance of our bikes, the thrills of the
+                MotoGP and Superbike championships, the emotions of the events
+                and all your passion. Discover the Ducati world also on
+                Instagram.
+              </p>
             </div>
-        </div> 
-    </div> 
-</body>
+            <a
+              href="https://www.instagram.com/nt_hoan.03/?hl=en"
+              target="_blank"
+              class="notice-info_button myBtn"
+            >
+              follow us
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER -->
+      <div id="footer">
+        <div class="footer-box">
+          <div class="footer-logo">
+            <img src="./common_pics/NO_BACKGROUND_2.png" alt="" />
+          </div>
+          <ul class="footer-policy">
+            <li class="footer-policy_item l-4">
+              <a href="">terms of user</a>
+            </li>
+            <li class="footer-policy_item l-4">
+              <a href="">privacy information</a>
+            </li>
+            <li class="footer-policy_item l-4">
+              <a href="">cookies information</a>
+            </li>
+          </ul>
+          <div class="footer-license">
+            <p>
+              Copyright © 2023 LDP Motor Holding S.p.A. – A Sole Shareholder
+              Company - A Company subject to the Management and Coordination
+              activities of AUDI AG. All rights reserved. VAT 05113870967
+            </p>
+          </div>
+          <div class="footer-link">
+            <div class="footer-link_brand l-4">
+              <img
+                src="./common_pics/logo_brand/ducati-3-logo-black-and-white.png"
+                alt=""
+              />
+              <img
+                src="./common_pics/logo_brand/Kawasaki-logo.svg.png"
+                alt=""
+              />
+              <img
+                src="./common_pics/logo_brand/yamaha-parkway-music-png-logo-17.png"
+                alt=""
+              />
+            </div>
+            <div class="social-medias l-4">
+              <a href="https://www.facebook.com/thaihoan.1103">
+                <i class="ti-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/nt_hoan.03/">
+                <i class="ti-instagram"></i>
+              </a>
+              <a href="https://www.youtube.com/">
+                <i class="ti-youtube"></i>
+              </a>
+              <a href="https://twitter.com/ThaiHoan1103">
+                <i class="ti-twitter"></i>
+              </a>
+            </div>
+            <a href="" class="footer-link_country l-4">
+              <div class="country-box">
+                <i class="ti-world"></i>
+                international website
+                <i class="ti-angle-up"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
