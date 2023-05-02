@@ -108,16 +108,16 @@ body{
 #header.header-items ul{
     text-decoration: none;
     list-style: none;
-    
 }
+
 #header .header-items ul .header-item{
     text-align: center;
     cursor: pointer;
+    text-decoration: none;
+    color: #fff;
 }
-.header-item:hover{
-    background-color: #e9e8e2;
-}
-.header-item:hover a{
+#header .header-items ul .header-item:hover{
+    background-color: #fff;
     color: #111111;
     opacity: 0.8;
 }
@@ -167,6 +167,7 @@ body{
     width: 16vw;
     background: #55486800;
     border-radius: 10px;
+    background-color: #fff;
     
 }
 .search-box:hover .input::placeholder{
